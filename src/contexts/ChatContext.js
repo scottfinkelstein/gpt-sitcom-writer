@@ -84,6 +84,7 @@ const reducer = (state, action) => {
                 ...state,
                 stepIndex: action.payload.stepIndex
             }
+            
     }
 } 
 

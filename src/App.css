@@ -93,15 +93,18 @@ ul.decade-select {
   list-style-type: none;
 }
 
-ul.decade-select li a {
+ul.decade-select li button {
   display: block;
   margin-bottom: 10px;
+  border: none;
+  width: 100%;
   padding: 1rem 3%;
   text-decoration: none;
   color: #000;
   background-color: rgb(180, 220, 255);
   font-family: 'Montserrat';
   font-size: 18px;
+  text-align: left;
   /* text-transform: uppercase; */
   cursor: pointer;
 }

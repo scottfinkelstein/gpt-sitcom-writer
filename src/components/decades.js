@@ -22,7 +22,7 @@ const Decades = ({ step }) => {
             <h3>Which decade do you want the random sitcom to be based on?</h3>
             <p>{ state.sitcomDecade }</p>
             <ul className="decade-select">
-                { decades.map((decade, i) => <li><a href="#" onClick={ () => { setSelectedDecade(decade) } }>{decade}</a></li>) }
+                { decades.map((decade, i) => <li><button onClick={ () => { setSelectedDecade(decade) } }>{decade}</button></li>) }
             </ul>
             <div className="btn-group">
             <button className="btn-next" onClick={ () => { changeStep('next') } }>Next</button>
