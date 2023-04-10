@@ -1,5 +1,4 @@
 import './App.css';
-import { useChatContext } from './contexts/ChatContext';
 import Intro from './components/intro'
 import Name from './components/name';
 import ChatResponse from './components/chatResponse';
@@ -8,7 +7,7 @@ import GenerateSitcom from './components/generateSitcom';
 import ThreeTopics from './components/threeTopics';
 
 function App() {
-  const { state, dispatch } = useChatContext()
+  
   
   return (
    <>

@@ -6,7 +6,7 @@ import { useMemo } from "react"
 const GenerateSitcom = ({ step }) => {
     const { state, dispatch } = useChatContext()
 
-    const sitcomsByDecade = useMemo(() => {
+    useMemo(() => {
         fetch(`https://zdimqpe9ee.execute-api.us-east-1.amazonaws.com/sitcoms/decade/${state.sitcomDecade}`)
             .then((response) => {
                 return response.json()
@@ -15,7 +15,7 @@ const GenerateSitcom = ({ step }) => {
                 const randomIndex = Math.floor(Math.random() * sitcoms.length);
                 dispatch({ type: 'setRandomlySelectedSitcom', payload: { sitcomTitle: sitcoms[randomIndex].title }})
             })
-    }, [state.sitcomDecade])
+    }, [state.sitcomDecade, dispatch])
 
     const openai = new OpenAIApi(new Configuration({ apiKey: process.env.REACT_APP_OPENAI_API_KEY }))
 

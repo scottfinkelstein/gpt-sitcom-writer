@@ -2,7 +2,7 @@ import { useChatContext } from '../contexts/ChatContext'
 import { changeStep } from '../functions'
 
 const ThreeTopics = ({ step }) => {
-    const { state, dispatch } = useChatContext()
+    const { dispatch } = useChatContext()
 
     const addTopics = () => {
         const topicElements = document.querySelectorAll('.topic')

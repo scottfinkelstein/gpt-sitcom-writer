@@ -1,7 +1,6 @@
-import { useEffect } from "react"
+
 import { changeStep } from "../functions"
-import TypeIt from 'typeit'
-import { Configuration, OpenAIApi } from "openai"
+
 const Intro = ({ step }) => {
     // useEffect(() => {
     //     new TypeIt('#intro-copy', {
